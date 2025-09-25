@@ -1,15 +1,18 @@
-import React from "react";
-import { ScrollView } from "react-native";
-import CounterApp from "./CounterApp";
-import ColorChangerApp from "./ColorChangerApp";
+import React from 'react';
+import { Text, View, StyleSheet } from 'react-native';
 
 export default function App() {
   return (
-    <ScrollView style={{ flex: 1 }}>
-      <CounterApp/> 
-      <ColorChangerApp />
-
-
-    </ScrollView>
+    <View style={styles.container}>
+      <Text>Hello, world!</Text>
+    </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,               // Take up the whole screen
+    justifyContent: 'center', // Center vertically
+    alignItems: 'center',     // Center horizontally
+  },
+});
