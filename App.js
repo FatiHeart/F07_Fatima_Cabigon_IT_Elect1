@@ -1,18 +1,13 @@
-import React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+
+import React from "react";
+import { ScrollView } from "react-native";
+import Messenger from "./Messenger";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Hello, world!</Text>
-    </View>
+    <ScrollView style={{ flex: 1 }}>
+      <Messenger/> />
+
+    </ScrollView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,               // Take up the whole screen
-    justifyContent: 'center', // Center vertically
-    alignItems: 'center',     // Center horizontally
-  },
-});
